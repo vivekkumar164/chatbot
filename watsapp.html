@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+  <div id="container">
+   
+    <div class="left">
+      <nav><div class="circle2"></nav>
+      <div class="scroll">
+        <div class=" content"><div class="circle"></div></div>
+        <div class=" content"><div class="circle"></div></div>
+        <div class=" content"><div class="circle"></div></div>
+        <div class=" content"><div class="circle"></div></div>
+        <div class=" content"><div class="circle"></div></div>
+        <div class=" content"><div class="circle"></div></div>
+        <div class=" content"><div class="circle"></div></div>
+        <div class=" content"><div class="circle"></div></div>
+        <div class=" content"><div class="circle"></div></div>
+        <div class=" content"><div class="circle"></div></div>
+        <div class=" content"><div class="circle"></div></div>
+        <div class=" content"><div class="circle"></div></div>
+      </div>
+     
+    </div>
+    <div class="right">
+      <nav><div class="circle2"></div></nav>
+      <div class="output">
+        <textarea id="output" rows="6" cols="50" >
+          At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+          </textarea>
+      </div>
+      <div class="input">
+        <input type="text" id="input" onkeyup="myFunction()">
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function myFunction() {
+  var x = document.getElementById("input");
+  var y = document.getElementById("output");
+  y.value = x.value;
+}
+  </script>
+</body>
+</html>
