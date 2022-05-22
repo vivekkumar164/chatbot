@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>ChatBot</title>
 </head>
 <body>
  
@@ -30,26 +31,26 @@
       </div>
      
     </div>
-    <div class="right">
+    <div class="right" >
       <nav><div class="circle2"></div></nav>
-      <div class="output">
-        <textarea id="output" rows="6" cols="50" >
-         
-          </textarea>
+      <!-- <div class="output">
+       <div id="output" style="overflow-y: scroll;">
+        
+       </div>
+      </div> -->
+      <div class="right-scroll">
+        <div class="chat-body" id="chatBody"></div>
       </div>
+      
       <div class="input">
-        <input type="text" id="input" onkeyup="myFunction()">
+        <input type="text" id="input">
+        <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"></i>
       </div>
     </div>
   </div>
 
 
-  <script>
-    function myFunction() {
-  var x = document.getElementById("input");
-  var y = document.getElementById("output");
-  y.value = x.value;
-}
-  </script>
+  <script  src="index.js" defer></script>
+  <script  src="response.js" defer></script>
 </body>
 </html>
