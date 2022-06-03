@@ -1,11 +1,18 @@
 
-
+// import('./response')
   const chatBody=document.querySelector('.chat');
   const textInput=document.querySelector('#input');
+  const contacts=document.querySelector('.contacts');
   
   
   // const send=document.querySelector('#chat-icon');
   // send.addEventListener('click',()=>renderUserMessage())
+
+  //to render dynamic list
+
+  // obj.map(e=>{
+  //   console.log(e);
+  // })
 
   textInput.addEventListener("keyup",(event)=>{
     console.log(event.target.value);

@@ -8,7 +8,7 @@
 }
 
 .contacts-container{
-    flex: 30%;
+    flex: 30% ;
     background-color: rgb(229, 229, 238);
     height: 100vh;
    
@@ -16,7 +16,7 @@
 }
 
 .contacts-container .section{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     height: 96vh;
   
@@ -46,24 +46,79 @@
 
 .searchbar{
     margin: auto;
+    outline: none;
+    border: none;
+   
+}
+.searchbar input{
+   
+    outline: none;
+    border: none;
+    font-size: 14px;
+    padding-left: 14px;
    
 }
 
 .contacts{
+    position: relative;
+    height: calc(100% - 15 vh);
     overflow-y: auto;
+  
 }
 
 .contacts-container .contacts .contactRow{
+    position: relative;
     background: rgb(212, 210, 210);
     min-height: 10vh;
     max-height: 10vh;
     border-bottom: 1px solid grey;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 15px;
+    overflow: hidden;
+    cursor: pointer;
    
    
+}
+
+.selectedUserImage{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+ }
+
+.block2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    
+}
+
+.block3{
+  
+    display: flex;
+   justify-content: space-between;
+    
+}
+.block3 .name {
+   font-size: larger;
+  }
+
+  .block3 .time {
+    font-size: small;
+   }
+
+.block4{
+   
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .chat-container{
@@ -113,6 +168,7 @@
    border-radius: 5px;
    background-color: rgb(240, 195, 17);
    padding: 2%;
+   outline: none;
    
     
   }
@@ -147,13 +203,7 @@
     
 }
 
-.selectedUserImage{
-   position: relative;
-   width: 40px;
-   height: 40px;
-   overflow: hidden;
-   border-radius: 50%;
-}
+
 
 
 .chat{

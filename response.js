@@ -37,3 +37,5 @@ const obj = [
         'chats':[]
     }
 ]
+
+module.exports = obj
