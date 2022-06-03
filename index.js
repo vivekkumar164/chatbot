@@ -1,13 +1,14 @@
 
 
-  const chatBody=document.querySelector('.chat-body');
+  const chatBody=document.querySelector('.chat');
   const textInput=document.querySelector('#input');
-  const send=document.querySelector('#chat-icon');
   
-
-  send.addEventListener('click',()=>renderUserMessage())
+  
+  // const send=document.querySelector('#chat-icon');
+  // send.addEventListener('click',()=>renderUserMessage())
 
   textInput.addEventListener("keyup",(event)=>{
+    console.log(event.target.value);
     if(event.keyCode === 13){
       renderUserMessage();
     }
@@ -53,6 +54,15 @@
   }
 
   const setScrollPosition=()=>{
+    chatBody.scrollTop=chatBody.scrollHeight
+    // if(chatBody.scrollHeight > 0){
+    //   window.setTimeout(() => {
+    //     window.scrollBy(0,chatBody.scrollHeight);
+    // }, 1000)
+      //chatBody.offsetTop;
+       //console.log('chatBody.scrollTop',chatBody.scrollTop);
+      };
     
-    if(chatBody.scrollHeight > 0) chatBody.scrollTop=chatBody.scrollHeight;
-  }
+
+   
+  

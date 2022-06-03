@@ -1,29 +1,135 @@
-html{
-    position: fixed;
-}
 
-nav{
-    background-color: aqua;
-    height: 10%;
-    align-items: center;
-}
 
 #container{
-    height: 80%; 
     width: 100%;
+    height: 90vh;
     display: flex;
+  
 }
 
-.left{
-    width: 30vw;
+.contacts-container{
+    flex: 30%;
+    background-color: rgb(229, 229, 238);
+    height: 100vh;
+   
+  
 }
 
-.right{
-    width: 70vw;
-    background-color: rgb(155, 144, 144);
+.contacts-container .section{
+    display: flex;
+    flex-direction: column;
+    height: 96vh;
+  
 }
 
-.circle{
+.contacts-container .navbar{
+    background: rgb(216, 173, 173);
+    min-height: 8vh;
+    max-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    
+}
+
+.contacts-container .searchbar input{
+    margin: 1%;
+    border-radius: 10px;
+    background: rgb(243, 240, 240);
+    height: 7vh;
+    width: 32vw;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.searchbar{
+    margin: auto;
+   
+}
+
+.contacts{
+    overflow-y: auto;
+}
+
+.contacts-container .contacts .contactRow{
+    background: rgb(212, 210, 210);
+    min-height: 10vh;
+    max-height: 10vh;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+   
+   
+}
+
+.chat-container{
+    
+    flex: 60%;
+    /* flex-direction: column; */
+}
+
+.chat-container .section{
+    display: flex;
+    flex-direction: column;
+    height: 98vh;  
+}
+.chat-container .navbar{
+    background: rgb(138, 134, 134);
+    min-height: 8vh;
+    max-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    
+}
+
+
+.chat-container .chat-body {
+    flex-grow: 1; 
+    background-image: url("./img/bg.jpeg");
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
+  }
+
+
+
+  .chat-container .input {
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    height: 8%;
+    
+  }
+
+  .chat-container .input input{
+   flex-grow: 1;
+   border: none;
+   border-radius: 5px;
+   background-color: rgb(240, 195, 17);
+   padding: 2%;
+   
+    
+  }
+  .chat-container .input img{
+        margin: 1%;
+   }
+
+   .cover{
+       position: relative;
+       top: 0;
+       left: 0;
+       width: 100%;
+       object-fit: contain;
+   }
+
+
+.contactImg{
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
@@ -31,7 +137,7 @@ nav{
     margin: 1%;
 }
 
-.circle2{
+.userImage{
     position: absolute;
     width: 3rem;
     height: 3rem;
@@ -41,54 +147,21 @@ nav{
     
 }
 
-.scroll{
-    overflow-y: auto;
-    max-height: 100vh;
-}
-
-.right-scroll{
-    overflow-y: auto;
-    max-height: 100vh;
-}
-
-.content{
-    background-color: #FF6;
-    border: 1px solid black;
-}
-
-.input{
-    background-color: #90c07a;
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
-    height: 5%;
-    margin-left: 0.4%;
-   
-}
-
-#input{
-    width: 64%;
-    height: 95%;
-}
-
-#id{
-    min-width: 40%;
-    border-radius: 10px;
+.selectedUserImage{
+   position: relative;
+   width: 40px;
+   height: 40px;
+   overflow: hidden;
+   border-radius: 50%;
 }
 
 
-.output{
-    overflow-y: scroll;
-}
-
-
-.chat-body {
+.chat{
     display: flex;
     flex-direction: column;
-    padding: 8px 10px;
-    align-items: flex-end;
-    overflow-y: auto;
-  }
+    scroll-snap-align: end;
+   
+}
 
 .user-message{
     padding: 8px;
@@ -107,13 +180,6 @@ nav{
     width: max-content;
     border-radius: 10px 10px 3px 10px;
     align-self: flex-start;
-  
-    
-}
-
-.bottom{
-    display: flex; 
-    flex-direction: column-reverse;
 }
 
 
