@@ -1,3 +1,4 @@
+//const obj = require("./response");
 
 // import('./response')
   const chatBody=document.querySelector('.chat');
@@ -9,10 +10,17 @@
   // send.addEventListener('click',()=>renderUserMessage())
 
   //to render dynamic list
+  window.onload = function(){
+    renderContacts(obj);
+  }
 
-  // obj.map(e=>{
-  //   console.log(e);
-  // })
+  function renderContacts(list){
+     list.map(e=>{
+    console.log(e);
+    //let name=
+  })
+  }
+ 
 
   textInput.addEventListener("keyup",(event)=>{
     console.log(event.target.value);
@@ -51,25 +59,17 @@
 
 
   const getBotResponse=(userInput)=>{
+    //console.log(obj);
     return responseObj[userInput] === undefined ? 'Please try somthing else':responseObj[userInput];
   }
 
   renderBotResponse=(userInput)=>{
     const res= getBotResponse(userInput);
     renderMessageEle(res);
-    setScrollPosition();
+    
   }
 
-  const setScrollPosition=()=>{
-    chatBody.scrollTop=chatBody.scrollHeight
-    // if(chatBody.scrollHeight > 0){
-    //   window.setTimeout(() => {
-    //     window.scrollBy(0,chatBody.scrollHeight);
-    // }, 1000)
-      //chatBody.offsetTop;
-       //console.log('chatBody.scrollTop',chatBody.scrollTop);
-      };
-    
+
 
    
   
