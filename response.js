@@ -5,6 +5,69 @@
     'time':new Date().toLocaleTimeString()
 }
 
+const contactList = [
+    {
+        imageUrl : "./img/pp.png",
+        name : 'vivek',
+        time : '04/06/2022',
+        message : 'aaaaaaaaaaaaaaas?'
+    },
+    {
+        imageUrl : "./img/pp.png",
+        name : 'suman',
+        time : '04/06/2022',
+        message : 'cum nisi labore? Sequi, deserunt quas? cum nisi labore? Sequi, deserunt quas?'
+    },
+    {
+        imageUrl : "./img/pp.png",
+        name : 'vivek',
+        time : '04/06/2022',
+        message : 'cum nisi labore? Sequi, deserunt quas? cum nisi labore? Sequi, deserunt quas?'
+    },
+    {
+        imageUrl : "./img/pp.png",
+        name : 'vivek',
+        time : '04/06/2022',
+        message : 'cum nisi labore? Sequi, deserunt quas? cum nisi labore? Sequi, deserunt quas?'
+    },
+    {
+        imageUrl : "./img/pp.png",
+        name : 'vivek',
+        time : '04/06/2022',
+        message : 'cum nisi labore? Sequi, deserunt quas? cum nisi labore? Sequi, deserunt quas?'
+    },
+    {
+        imageUrl : "./img/pp.png",
+        name : 'vivek',
+        time : '04/06/2022',
+        message : 'cum nisi labore? Sequi, deserunt quas? cum nisi labore? Sequi, deserunt quas?'
+    },
+    {
+        imageUrl : "./img/pp.png",
+        name : 'vivek',
+        time : '04/06/2022',
+        message : 'cum nisi labore? Sequi, deserunt quas? cum nisi labore? Sequi, deserunt quas?'
+    },
+    {
+        imageUrl : "./img/pp.png",
+        name : 'vivek',
+        time : '04/06/2022',
+        message : 'cum nisi labore? Sequi, deserunt quas? cum nisi labore? Sequi, deserunt quas?'
+    },
+    {
+        imageUrl : "./img/pp.png",
+        name : 'vivek',
+        time : '04/06/2022',
+        message : 'cum nisi labore? Sequi, deserunt quas? cum nisi labore? Sequi, deserunt quas?'
+    },
+    {
+        imageUrl : "./img/pp.png",
+        name : 'vivek',
+        time : '04/06/2022',
+        message : 'cum nisi labore? Sequi, deserunt quas? cum nisi labore? Sequi, deserunt quas?'
+    },
+]
+
  const obj = [
     {
         'name': 'vivek',
