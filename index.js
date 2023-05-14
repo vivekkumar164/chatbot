@@ -1,14 +1,10 @@
-//const obj = require("./response");
 
-// import('./response')
   const chatBody=document.querySelector('.chat');
   const textInput=document.querySelector('#input');
   const contacts=document.querySelector('.contacts');
   
   
-  // const send=document.querySelector('#chat-icon');
-  // send.addEventListener('click',()=>renderUserMessage())
-
+  
   //to render dynamic list
   window.onload = function(){
     renderContacts(contactList);
@@ -22,7 +18,6 @@
  
 
   textInput.addEventListener("keyup",(event)=>{
-    console.log(event.target.value);
     if(event.keyCode === 13){
       renderUserMessage();
     }
@@ -34,16 +29,11 @@
 
     setTimeout(()=>{
       renderBotResponse(userInput);
-      setScrollPosition();
     },600)
-    
-   
-     
   }
 
   const renderMessageEle=(txt,type)=>{
     let className="user-message";
-
     if(type !== 'user'){
       className='Bot-Message'
     }
@@ -144,6 +134,38 @@ function liveSearch() {
       cards[i].classList.add("is-hidden");
     }
   }
+}
+
+ function getFileAsInput(){
+   document.getElementById('inputMedia').click();
+}
+
+changeHandler=()=>{
+  let fileElement = document.getElementById('inputMedia');
+  console.log(fileElement.files[0]);
+
+  // check if user had selected a file
+  if (fileElement.files.length === 0) {
+    alert('please choose a file')
+    return
+  }
+  renderImage(fileElement.files[0],'user');
+}
+
+renderImage = (file,userType) =>{
+  let className="user-message";
+  if(userType !== 'user'){
+    className='Bot-Message'
+  }
+
+  const msgElement=document.createElement('div');
+  const image=document.createElement('img');
+  image.src = URL.createObjectURL(file);
+
+
+    msgElement.classList.add(className);
+    msgElement.append(image);
+    chatBody.append(msgElement);
 }
 
 
